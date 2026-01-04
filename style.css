@@ -1,0 +1,185 @@
+/* ===== Google Font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+/* ===== BODY ===== */
+body{
+    display:flex;
+    background:#121212;
+    color:#fff;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar{
+    width:240px;
+    height:100vh;
+    background:#000;
+    padding:20px;
+    position:fixed;
+}
+
+.logo img{
+    width:140px;
+    margin-bottom:25px;
+}
+
+.navigation ul{
+    list-style:none;
+}
+
+.navigation ul li{
+    margin:15px 0;
+}
+
+.navigation ul li a{
+    text-decoration:none;
+    color:#b3b3b3;
+    font-size:14px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    transition:0.3s;
+}
+
+.navigation ul li a:hover{
+    color:#fff;
+}
+
+/* ===== POLICIES ===== */
+.policies{
+    position:absolute;
+    bottom:20px;
+}
+
+.policies a{
+    display:block;
+    color:#777;
+    font-size:11px;
+    text-decoration:none;
+    margin:5px 0;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.main-container{
+    margin-left:240px;
+    padding:20px;
+    width:calc(100% - 240px);
+}
+
+/* ===== TOP BAR ===== */
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.prev-next-buttons button{
+    background:#000;
+    border:none;
+    color:#fff;
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    cursor:pointer;
+    margin-right:10px;
+}
+
+.navbar{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.navbar a{
+    color:#b3b3b3;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.navbar button{
+    background:#fff;
+    color:#000;
+    border:none;
+    padding:8px 18px;
+    border-radius:20px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+/* ===== PLAYLIST SECTION ===== */
+.spotify-playlist h2{
+    margin-bottom:20px;
+}
+
+.list{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(180px,1fr));
+    gap:20px;
+}
+
+/* ===== CARD ===== */
+.item{
+    background:#181818;
+    padding:15px;
+    border-radius:10px;
+    transition:0.3s;
+    position:relative;
+    cursor:pointer;
+}
+
+.item:hover{
+    background:#282828;
+}
+
+.item img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+/* ===== PLAY BUTTON ===== */
+.play{
+    position:absolute;
+    right:20px;
+    bottom:85px;
+    background:#1db954;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    opacity:0;
+    transform:translateY(10px);
+    transition:0.3s;
+}
+
+.item:hover .play{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.play span{
+    color:#000;
+    font-size:18px;
+}
+
+/* ===== TEXT ===== */
+.item h4{
+    font-size:15px;
+    margin-bottom:5px;
+}
+
+.item p{
+    font-size:12px;
+    color:#b3b3b3;
+}
+
+
